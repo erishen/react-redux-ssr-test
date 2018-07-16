@@ -15,7 +15,7 @@
     "babel-register": "^6.26.0",
     "html-minifier": "^3.5.16",
     "moment": "^2.22.2",
-    "react-redux-ssr": "^1.0.12"
+    "react-redux-ssr": "^1.0.15"
   },
   "devDependencies": {
     "babel-plugin-react-html-attrs": "^2.1.0",
