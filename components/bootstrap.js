@@ -4,6 +4,7 @@ import _ from 'lodash';
 
 export default class Page extends Component<{}> {
     render() {
+        console.log('bootstrap');
         return (
             <div>
                 <ButtonToolbar>
