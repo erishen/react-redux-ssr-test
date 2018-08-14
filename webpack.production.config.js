@@ -46,6 +46,10 @@ var productionConfig = {
         }),
         new UglifyJSPlugin(),
         new OptimizeCssAssetsPlugin(),
+        new webpack.DllReferencePlugin({
+            context: __dirname,
+            manifest: require('./manifest.json')
+        }),
         new webpack.ContextReplacementPlugin(
             /..[\/\\]..[\/\\]config/,
             false

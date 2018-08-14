@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "react,redux,ssr,test",
   "main": "",
+  "config": {
+    "port": 8080
+  },
   "scripts": {
-    "rrs": "rrs start",
+    "start": "rrs start",
+    "debug": "rrs debug",
     "build": "webpack --config webpack.production.config.js -p && gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -fr dest && rm -fr public/page"
   },
   "author": "Erishen Sun",
   "license": "ISC",
@@ -26,7 +30,7 @@
     "react-dom": "^16.4.0",
     "react-lazyload": "^2.3.0",
     "react-redux": "^5.0.7",
-    "react-redux-ssr": "^1.0.30",
+    "react-redux-ssr": "^1.0.35",
     "react-router-dom": "^4.3.1",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
